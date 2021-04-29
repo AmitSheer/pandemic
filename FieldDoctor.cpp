@@ -4,10 +4,13 @@
 
 #include "FieldDoctor.hpp"
 
+#include <utility>
+
 pandemic::FieldDoctor &pandemic::FieldDoctor::treat(int colorId) {
-    return static_cast<FieldDoctor &>(Player::treat(colorId));
+    return *this;
+
 }
 
-pandemic::FieldDoctor::FieldDoctor(pandemic::Board board, int cityId) : Player(board, cityId) {
+pandemic::FieldDoctor::FieldDoctor(pandemic::Board board, int cityId) : Player(std::move(board), cityId) {
 
 }

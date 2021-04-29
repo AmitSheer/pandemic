@@ -4,10 +4,12 @@
 
 #include "Researcher.hpp"
 
+#include <utility>
+
 pandemic::Researcher &pandemic::Researcher::discover_cure(int colorId) {
-    return static_cast<Researcher &>(Player::discover_cure(pandemic::Color()));
+    return *this;
 }
 
-pandemic::Researcher::Researcher(pandemic::Board board, int cityId) : Player(board, cityId) {
+pandemic::Researcher::Researcher(pandemic::Board board, int cityId) : Player(std::move(board), cityId) {
 
 }

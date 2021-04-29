@@ -4,10 +4,12 @@
 
 #include "Virologist.hpp"
 
+#include <utility>
+
 pandemic::Virologist &pandemic::Virologist::treat(int colorId) {
-    return static_cast<Virologist &>(Player::treat(colorId));
+    return *this;
 }
 
-pandemic::Virologist::Virologist(pandemic::Board board, int cityId) : Player(board, cityId) {
+pandemic::Virologist::Virologist(pandemic::Board board, int cityId) : Player(std::move(board), cityId) {
 
 }

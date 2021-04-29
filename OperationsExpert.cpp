@@ -3,10 +3,13 @@
 //
 #include "OperationsExpert.hpp"
 
+#include <utility>
+
 pandemic::OperationsExpert &pandemic::OperationsExpert::build() {
-    return static_cast<OperationsExpert &>(Player::build());
+    return *this;
+
 }
 
-pandemic::OperationsExpert::OperationsExpert(pandemic::Board board, int cityId): Player(board,cityId) {
+pandemic::OperationsExpert::OperationsExpert(pandemic::Board board, int cityId): Player(std::move(board),cityId) {
     this->curr_role = typeid(this).name();
 }

@@ -4,10 +4,13 @@
 
 #include "GeneSplicer.hpp"
 
+#include <utility>
+
 pandemic::GeneSplicer &pandemic::GeneSplicer::discover_cure(int colorId) {
-    return static_cast<GeneSplicer &>(Player::discover_cure(pandemic::Color()));
+    return *this;
+
 }
 
-pandemic::GeneSplicer::GeneSplicer(pandemic::Board board, int cityId) : Player(board, cityId) {
+pandemic::GeneSplicer::GeneSplicer(pandemic::Board board, int cityId) : Player(std::move(board), cityId) {
 
 }

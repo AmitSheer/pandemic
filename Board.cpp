@@ -17,7 +17,7 @@ int &pandemic::Board::operator[](pandemic::City city) {
     return cityInfectionLevel.at(city).infectionLevel;
 }
 
-const int pandemic::Board::operator[](pandemic::City city) const {
+int pandemic::Board::operator[](pandemic::City city) const {
     return cityInfectionLevel.at(city).infectionLevel;
 }
 
@@ -27,5 +27,10 @@ std::ostream &pandemic::operator<<(ostream &os, const pandemic::Board &board) {
 }
 
 bool pandemic::Board::is_clean() {
-    return false;
+    for(const auto& kv:cityInfectionLevel){
+        if(kv.second.infectionLevel!=0){
+            return false;
+        }
+    }
+    return true;
 }

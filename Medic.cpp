@@ -4,10 +4,12 @@
 
 #include "Medic.hpp"
 
+#include <utility>
+
 pandemic::Medic &pandemic::Medic::treat(int colorId) {
-    return static_cast<Medic &>(Player::treat(colorId));
+    return *this;
 }
 
-pandemic::Medic::Medic(pandemic::Board board, int cityId) : Player(board, cityId) {
+pandemic::Medic::Medic(pandemic::Board board, int cityId) : Player(std::move(board), cityId) {
 
 }

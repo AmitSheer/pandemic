@@ -3,6 +3,8 @@
 //
 
 #include "Player.hpp"
+
+#include <utility>
 pandemic::Player::~Player() {
 
 }
@@ -39,10 +41,10 @@ pandemic::Player &pandemic::Player::take_card(int cityId) {
     return *this;
 }
 
-int pandemic::Player::role() {
-    return 0;
+std::string pandemic::Player::role() {
+    return curr_role;
 }
 
-pandemic::Player::Player(pandemic::Board board, int cityId) : board(board), curr_city(cityId){
+pandemic::Player::Player(pandemic::Board board, int cityId) : board(std::move(board)), curr_city(cityId){
 
 }

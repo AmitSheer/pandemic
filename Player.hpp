@@ -23,7 +23,7 @@ namespace pandemic{
         Player &discover_cure(pandemic::Color card_color);
         Player& treat(int cityId);
         Player& take_card(int cityId);
-        int role();
+        std::string role();
     private:
         int curr_city;
         Board board;
