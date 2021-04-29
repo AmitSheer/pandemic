@@ -1,0 +1,13 @@
+//
+// Created by amit on 29/04/2021.
+//
+
+#include "Dispatcher.hpp"
+
+pandemic::Dispatcher &pandemic::Dispatcher::direct_fly(int cityId) {
+    return *this;
+}
+
+pandemic::Dispatcher::Dispatcher(pandemic::Board board, int cityId) : Player(board, cityId) {
+
+}
