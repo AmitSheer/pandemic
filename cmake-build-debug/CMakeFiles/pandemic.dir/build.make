@@ -89,22 +89,9 @@ CMakeFiles/pandemic.dir/Demo1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pandemic.dir/Demo1.cpp.s"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/Downloads/pandemic/Demo1.cpp -o CMakeFiles/pandemic.dir/Demo1.cpp.s
 
-CMakeFiles/pandemic.dir/City.cpp.o: CMakeFiles/pandemic.dir/flags.make
-CMakeFiles/pandemic.dir/City.cpp.o: ../City.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pandemic.dir/City.cpp.o"
-	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/City.cpp.o -c /home/amit/Downloads/pandemic/City.cpp
-
-CMakeFiles/pandemic.dir/City.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pandemic.dir/City.cpp.i"
-	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amit/Downloads/pandemic/City.cpp > CMakeFiles/pandemic.dir/City.cpp.i
-
-CMakeFiles/pandemic.dir/City.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pandemic.dir/City.cpp.s"
-	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/Downloads/pandemic/City.cpp -o CMakeFiles/pandemic.dir/City.cpp.s
-
 CMakeFiles/pandemic.dir/Board.cpp.o: CMakeFiles/pandemic.dir/flags.make
 CMakeFiles/pandemic.dir/Board.cpp.o: ../Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pandemic.dir/Board.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pandemic.dir/Board.cpp.o"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/Board.cpp.o -c /home/amit/Downloads/pandemic/Board.cpp
 
 CMakeFiles/pandemic.dir/Board.cpp.i: cmake_force
@@ -117,7 +104,7 @@ CMakeFiles/pandemic.dir/Board.cpp.s: cmake_force
 
 CMakeFiles/pandemic.dir/Medic.cpp.o: CMakeFiles/pandemic.dir/flags.make
 CMakeFiles/pandemic.dir/Medic.cpp.o: ../Medic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pandemic.dir/Medic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pandemic.dir/Medic.cpp.o"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/Medic.cpp.o -c /home/amit/Downloads/pandemic/Medic.cpp
 
 CMakeFiles/pandemic.dir/Medic.cpp.i: cmake_force
@@ -130,7 +117,7 @@ CMakeFiles/pandemic.dir/Medic.cpp.s: cmake_force
 
 CMakeFiles/pandemic.dir/Virologist.cpp.o: CMakeFiles/pandemic.dir/flags.make
 CMakeFiles/pandemic.dir/Virologist.cpp.o: ../Virologist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pandemic.dir/Virologist.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pandemic.dir/Virologist.cpp.o"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/Virologist.cpp.o -c /home/amit/Downloads/pandemic/Virologist.cpp
 
 CMakeFiles/pandemic.dir/Virologist.cpp.i: cmake_force
@@ -143,7 +130,7 @@ CMakeFiles/pandemic.dir/Virologist.cpp.s: cmake_force
 
 CMakeFiles/pandemic.dir/GeneSplicer.cpp.o: CMakeFiles/pandemic.dir/flags.make
 CMakeFiles/pandemic.dir/GeneSplicer.cpp.o: ../GeneSplicer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pandemic.dir/GeneSplicer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pandemic.dir/GeneSplicer.cpp.o"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/GeneSplicer.cpp.o -c /home/amit/Downloads/pandemic/GeneSplicer.cpp
 
 CMakeFiles/pandemic.dir/GeneSplicer.cpp.i: cmake_force
@@ -156,7 +143,7 @@ CMakeFiles/pandemic.dir/GeneSplicer.cpp.s: cmake_force
 
 CMakeFiles/pandemic.dir/Player.cpp.o: CMakeFiles/pandemic.dir/flags.make
 CMakeFiles/pandemic.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pandemic.dir/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pandemic.dir/Player.cpp.o"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/Player.cpp.o -c /home/amit/Downloads/pandemic/Player.cpp
 
 CMakeFiles/pandemic.dir/Player.cpp.i: cmake_force
@@ -169,7 +156,7 @@ CMakeFiles/pandemic.dir/Player.cpp.s: cmake_force
 
 CMakeFiles/pandemic.dir/FieldDoctor.cpp.o: CMakeFiles/pandemic.dir/flags.make
 CMakeFiles/pandemic.dir/FieldDoctor.cpp.o: ../FieldDoctor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pandemic.dir/FieldDoctor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pandemic.dir/FieldDoctor.cpp.o"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/FieldDoctor.cpp.o -c /home/amit/Downloads/pandemic/FieldDoctor.cpp
 
 CMakeFiles/pandemic.dir/FieldDoctor.cpp.i: cmake_force
@@ -182,7 +169,7 @@ CMakeFiles/pandemic.dir/FieldDoctor.cpp.s: cmake_force
 
 CMakeFiles/pandemic.dir/Dispatcher.cpp.o: CMakeFiles/pandemic.dir/flags.make
 CMakeFiles/pandemic.dir/Dispatcher.cpp.o: ../Dispatcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pandemic.dir/Dispatcher.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pandemic.dir/Dispatcher.cpp.o"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/Dispatcher.cpp.o -c /home/amit/Downloads/pandemic/Dispatcher.cpp
 
 CMakeFiles/pandemic.dir/Dispatcher.cpp.i: cmake_force
@@ -195,7 +182,7 @@ CMakeFiles/pandemic.dir/Dispatcher.cpp.s: cmake_force
 
 CMakeFiles/pandemic.dir/OperationsExpert.cpp.o: CMakeFiles/pandemic.dir/flags.make
 CMakeFiles/pandemic.dir/OperationsExpert.cpp.o: ../OperationsExpert.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pandemic.dir/OperationsExpert.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pandemic.dir/OperationsExpert.cpp.o"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/OperationsExpert.cpp.o -c /home/amit/Downloads/pandemic/OperationsExpert.cpp
 
 CMakeFiles/pandemic.dir/OperationsExpert.cpp.i: cmake_force
@@ -208,7 +195,7 @@ CMakeFiles/pandemic.dir/OperationsExpert.cpp.s: cmake_force
 
 CMakeFiles/pandemic.dir/Scientist.cpp.o: CMakeFiles/pandemic.dir/flags.make
 CMakeFiles/pandemic.dir/Scientist.cpp.o: ../Scientist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pandemic.dir/Scientist.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pandemic.dir/Scientist.cpp.o"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/Scientist.cpp.o -c /home/amit/Downloads/pandemic/Scientist.cpp
 
 CMakeFiles/pandemic.dir/Scientist.cpp.i: cmake_force
@@ -221,7 +208,7 @@ CMakeFiles/pandemic.dir/Scientist.cpp.s: cmake_force
 
 CMakeFiles/pandemic.dir/Researcher.cpp.o: CMakeFiles/pandemic.dir/flags.make
 CMakeFiles/pandemic.dir/Researcher.cpp.o: ../Researcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pandemic.dir/Researcher.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pandemic.dir/Researcher.cpp.o"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/Researcher.cpp.o -c /home/amit/Downloads/pandemic/Researcher.cpp
 
 CMakeFiles/pandemic.dir/Researcher.cpp.i: cmake_force
@@ -232,10 +219,22 @@ CMakeFiles/pandemic.dir/Researcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pandemic.dir/Researcher.cpp.s"
 	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/Downloads/pandemic/Researcher.cpp -o CMakeFiles/pandemic.dir/Researcher.cpp.s
 
+CMakeFiles/pandemic.dir/Test.cpp.o: CMakeFiles/pandemic.dir/flags.make
+CMakeFiles/pandemic.dir/Test.cpp.o: ../Test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pandemic.dir/Test.cpp.o"
+	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pandemic.dir/Test.cpp.o -c /home/amit/Downloads/pandemic/Test.cpp
+
+CMakeFiles/pandemic.dir/Test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pandemic.dir/Test.cpp.i"
+	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amit/Downloads/pandemic/Test.cpp > CMakeFiles/pandemic.dir/Test.cpp.i
+
+CMakeFiles/pandemic.dir/Test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pandemic.dir/Test.cpp.s"
+	/usr/bin/clang++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/Downloads/pandemic/Test.cpp -o CMakeFiles/pandemic.dir/Test.cpp.s
+
 # Object files for target pandemic
 pandemic_OBJECTS = \
 "CMakeFiles/pandemic.dir/Demo1.cpp.o" \
-"CMakeFiles/pandemic.dir/City.cpp.o" \
 "CMakeFiles/pandemic.dir/Board.cpp.o" \
 "CMakeFiles/pandemic.dir/Medic.cpp.o" \
 "CMakeFiles/pandemic.dir/Virologist.cpp.o" \
@@ -245,13 +244,13 @@ pandemic_OBJECTS = \
 "CMakeFiles/pandemic.dir/Dispatcher.cpp.o" \
 "CMakeFiles/pandemic.dir/OperationsExpert.cpp.o" \
 "CMakeFiles/pandemic.dir/Scientist.cpp.o" \
-"CMakeFiles/pandemic.dir/Researcher.cpp.o"
+"CMakeFiles/pandemic.dir/Researcher.cpp.o" \
+"CMakeFiles/pandemic.dir/Test.cpp.o"
 
 # External object files for target pandemic
 pandemic_EXTERNAL_OBJECTS =
 
 pandemic: CMakeFiles/pandemic.dir/Demo1.cpp.o
-pandemic: CMakeFiles/pandemic.dir/City.cpp.o
 pandemic: CMakeFiles/pandemic.dir/Board.cpp.o
 pandemic: CMakeFiles/pandemic.dir/Medic.cpp.o
 pandemic: CMakeFiles/pandemic.dir/Virologist.cpp.o
@@ -262,6 +261,7 @@ pandemic: CMakeFiles/pandemic.dir/Dispatcher.cpp.o
 pandemic: CMakeFiles/pandemic.dir/OperationsExpert.cpp.o
 pandemic: CMakeFiles/pandemic.dir/Scientist.cpp.o
 pandemic: CMakeFiles/pandemic.dir/Researcher.cpp.o
+pandemic: CMakeFiles/pandemic.dir/Test.cpp.o
 pandemic: CMakeFiles/pandemic.dir/build.make
 pandemic: CMakeFiles/pandemic.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable pandemic"

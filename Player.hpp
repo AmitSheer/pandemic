@@ -27,6 +27,7 @@ namespace pandemic{
     private:
         int curr_city;
         Board board;
+        std::vector<pandemic::City> cards;
     protected:
         std::string curr_role;
     };

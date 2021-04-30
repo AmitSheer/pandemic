@@ -3,4 +3,4 @@ project(pandemic)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(pandemic Demo1.cpp Board.hpp Board.cpp Medic.cpp Medic.hpp Virologist.cpp Virologist.hpp GeneSplicer.cpp GeneSplicer.hpp Player.hpp Player.cpp FieldDoctor.cpp FieldDoctor.hpp Dispatcher.cpp OperationsExpert.cpp Scientist.cpp Researcher.cpp)
+add_executable(pandemic Demo1.cpp Board.hpp Board.cpp Medic.cpp Medic.hpp Virologist.cpp Virologist.hpp GeneSplicer.cpp GeneSplicer.hpp Player.hpp Player.cpp FieldDoctor.cpp FieldDoctor.hpp Dispatcher.cpp OperationsExpert.cpp Scientist.cpp Researcher.cpp Test.cpp City.hpp)

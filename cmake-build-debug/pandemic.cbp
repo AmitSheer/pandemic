@@ -90,10 +90,7 @@
 		<Unit filename="/home/amit/Downloads/pandemic/Board.hpp">
 			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/home/amit/Downloads/pandemic/City.cpp">
-			<Option target="pandemic"/>
-		</Unit>
-		<Unit filename="/home/amit/Downloads/pandemic/City.hpp">
+		<Unit filename="/home/amit/Downloads/pandemic/City.h">
 			<Option target="pandemic"/>
 		</Unit>
 		<Unit filename="/home/amit/Downloads/pandemic/Demo1.cpp">
@@ -145,6 +142,9 @@
 			<Option target="pandemic"/>
 		</Unit>
 		<Unit filename="/home/amit/Downloads/pandemic/Scientist.hpp">
+			<Option target="pandemic"/>
+		</Unit>
+		<Unit filename="/home/amit/Downloads/pandemic/Test.cpp">
 			<Option target="pandemic"/>
 		</Unit>
 		<Unit filename="/home/amit/Downloads/pandemic/Virologist.cpp">

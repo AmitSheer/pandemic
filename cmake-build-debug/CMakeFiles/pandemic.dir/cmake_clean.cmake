@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pandemic.dir/Board.cpp.o"
-  "CMakeFiles/pandemic.dir/City.cpp.o"
   "CMakeFiles/pandemic.dir/Demo1.cpp.o"
   "CMakeFiles/pandemic.dir/Dispatcher.cpp.o"
   "CMakeFiles/pandemic.dir/FieldDoctor.cpp.o"
@@ -10,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/pandemic.dir/Player.cpp.o"
   "CMakeFiles/pandemic.dir/Researcher.cpp.o"
   "CMakeFiles/pandemic.dir/Scientist.cpp.o"
+  "CMakeFiles/pandemic.dir/Test.cpp.o"
   "CMakeFiles/pandemic.dir/Virologist.cpp.o"
   "pandemic"
   "pandemic.pdb"

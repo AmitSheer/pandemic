@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/amit/Downloads/pandemic/Board.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Board.cpp.o"
-  "/home/amit/Downloads/pandemic/City.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/City.cpp.o"
   "/home/amit/Downloads/pandemic/Demo1.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Demo1.cpp.o"
   "/home/amit/Downloads/pandemic/Dispatcher.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Dispatcher.cpp.o"
   "/home/amit/Downloads/pandemic/FieldDoctor.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/FieldDoctor.cpp.o"
@@ -15,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/amit/Downloads/pandemic/Player.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Player.cpp.o"
   "/home/amit/Downloads/pandemic/Researcher.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Researcher.cpp.o"
   "/home/amit/Downloads/pandemic/Scientist.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Scientist.cpp.o"
+  "/home/amit/Downloads/pandemic/Test.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Test.cpp.o"
   "/home/amit/Downloads/pandemic/Virologist.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Virologist.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")

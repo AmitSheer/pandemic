@@ -169,33 +169,6 @@ Board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
-City.o: City.cpp.o
-
-.PHONY : City.o
-
-# target to build an object file
-City.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/City.cpp.o
-.PHONY : City.cpp.o
-
-City.i: City.cpp.i
-
-.PHONY : City.i
-
-# target to preprocess a source file
-City.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/City.cpp.i
-.PHONY : City.cpp.i
-
-City.s: City.cpp.s
-
-.PHONY : City.s
-
-# target to generate assembly for a file
-City.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/City.cpp.s
-.PHONY : City.cpp.s
-
 Demo1.o: Demo1.cpp.o
 
 .PHONY : Demo1.o
@@ -439,6 +412,33 @@ Scientist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Scientist.cpp.s
 .PHONY : Scientist.cpp.s
 
+Test.o: Test.cpp.o
+
+.PHONY : Test.o
+
+# target to build an object file
+Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Test.cpp.o
+.PHONY : Test.cpp.o
+
+Test.i: Test.cpp.i
+
+.PHONY : Test.i
+
+# target to preprocess a source file
+Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Test.cpp.i
+.PHONY : Test.cpp.i
+
+Test.s: Test.cpp.s
+
+.PHONY : Test.s
+
+# target to generate assembly for a file
+Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Test.cpp.s
+.PHONY : Test.cpp.s
+
 Virologist.o: Virologist.cpp.o
 
 .PHONY : Virologist.o
@@ -478,9 +478,6 @@ help:
 	@echo "... Board.o"
 	@echo "... Board.i"
 	@echo "... Board.s"
-	@echo "... City.o"
-	@echo "... City.i"
-	@echo "... City.s"
 	@echo "... Demo1.o"
 	@echo "... Demo1.i"
 	@echo "... Demo1.s"
@@ -508,6 +505,9 @@ help:
 	@echo "... Scientist.o"
 	@echo "... Scientist.i"
 	@echo "... Scientist.s"
+	@echo "... Test.o"
+	@echo "... Test.i"
+	@echo "... Test.s"
 	@echo "... Virologist.o"
 	@echo "... Virologist.i"
 	@echo "... Virologist.s"
