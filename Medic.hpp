@@ -7,8 +7,8 @@
 namespace pandemic{
     class Medic: public Player{
     public:
-        Medic(pandemic::Board board, int cityId);
-        Medic& treat(int colorId);
+        Medic(pandemic::Board& board, int cityId);
+        Medic& treat(City cityId) override;
     };
 }
 

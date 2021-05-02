@@ -6,10 +6,10 @@
 
 #include <utility>
 
-pandemic::Medic &pandemic::Medic::treat(int colorId) {
+pandemic::Medic &pandemic::Medic::treat(City cityId) {
     return *this;
 }
 
-pandemic::Medic::Medic(pandemic::Board board, int cityId) : Player(board, cityId) {
+pandemic::Medic::Medic(pandemic::Board& board, int cityId) : Player(board, cityId) {
 
 }

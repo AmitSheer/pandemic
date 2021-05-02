@@ -35,7 +35,17 @@ std::vector<Player> initPlayerTypes(){
     Board e;
     Board f;
     Board g;
-    std::vector<Player> playerList = {Player(b,City::SanFrancisco),Dispatcher(a,City::SanFrancisco),FieldDoctor(c,City::SanFrancisco),
+    Board h;
+    Board i;
+    std::vector<Player> playerList = {Player(b,City::SanFrancisco),
+                                      Dispatcher(a,City::SanFrancisco),
+                                      FieldDoctor(c,City::SanFrancisco),
+                                      OperationsExpert(d,City::SanFrancisco),
+                                      GeneSplicer(e,City::SanFrancisco),
+                                      Medic(f,City::SanFrancisco),
+                                      Researcher(g,City::SanFrancisco),
+                                      Scientist(h,City::SanFrancisco,4),
+                                      Virologist(i,City::SanFrancisco)
                                       };
     return playerList;
 }
@@ -56,45 +66,74 @@ void check_drive(Player& p){
     CHECK_NOTHROW(p.drive(City::Manila));
     CHECK_NOTHROW(p.drive(City::SanFrancisco));
     for(int city = City::Atlanta;city!=City::invalidCity+1; ++city){
-        if(city!=City::Chicago||city!=City::LosAngeles||city!=City::Tokyo||city!=City::Manila||city!=City::SanFrancisco){
-            CHECK_THROWS(p.drive(city));
+        if(city!=City::Chicago&&city!=City::LosAngeles&&city!=City::Tokyo&&city!=City::Manila&&city!=City::SanFrancisco){
+            CHECK_THROWS(p.drive(static_cast<City>(city)));
         }
     }
 }
 TEST_CASE("drive"){
      Board board;
-     Player A(board,City::SanFrancisco);
-    check_drive(A);
-     board = Board();
-     Virologist virologist(board, City::SanFrancisco);
-    check_drive(virologist);
-    board = Board();
-    GeneSplicer g(board, City::SanFrancisco);
-    check_drive(g);
-    board = Board();
-    FieldDoctor fd(board, City::SanFrancisco);
-    check_drive(fd);
-    board = Board();
-    Virologist virologist(board, City::SanFrancisco);
-    board = Board();
-    Virologist virologist(board, City::SanFrancisco);
+     auto a = initPlayerTypes();
+     for(auto b=a.begin(); b!=a.end();++b){
+         check_drive(*b);
+     }
  }
  /*      fly_direct:
- *          1. when have card
- *          2. when don't have card
- *          3. if Dispatcher and city has research station fly wherever he wants
+ *          1. when have card X
+ *          2. when don't have card X
+ *          3. if Dispatcher and city has research station fly wherever he wants X
  *          4. if Dispatcher and city doesnt have research station, and dont have city card
  *          5. if Dispatcher and city doesnt have research station, and have city card
   */
  TEST_CASE("fly_direct"){
+    auto pList = initPlayerTypes();
+    for(auto b=pList.begin(); b!=pList.end();++b){
+        b->take_card(City::Kinshasa);
+        for(int city = City::Atlanta;city!=City::invalidCity+1; ++city){
+            if(city!=City::Chicago&&city!=City::LosAngeles&&city!=City::Tokyo&&city!=City::Manila&&city!=City::SanFrancisco&&city!=City::Kinshasa){
+                CHECK_THROWS(b->fly_direct(static_cast<City>(city)));
+            }
+        }
+        CHECK_NOTHROW(b->fly_direct(City::Kinshasa));
+    }
     Board board;
-    Player A(board,City::SanFrancisco);
-
+    OperationsExpert oe(board,City::SanFrancisco);
+    oe.build();
+    Dispatcher dispatcher(board,City::SanFrancisco);
+    for(int city = City::Atlanta;city!=City::invalidCity+1; ++city){
+        if(city!=City::Chicago&&city!=City::LosAngeles&&city!=City::Tokyo&&city!=City::Manila&&city!=City::SanFrancisco){
+                    CHECK_NOTHROW(dispatcher.fly_direct(static_cast<City>(city)));
+        }
+        dispatcher = Dispatcher(board,City::SanFrancisco);
+    }
  }
  /*      fly_charter:
  *          1. when have current city card
  *          2. when dont have current city card
- *      fly_shuttle:
+  */
+TEST_CASE("fly_charter"){
+    auto pList = initPlayerTypes();
+    for(auto b=pList.begin(); b!=pList.end();++b){
+        b->take_card(City::Kinshasa);
+        for(int city = City::Atlanta;city!=City::invalidCity+1; ++city){
+            if(city!=City::Chicago&&city!=City::LosAngeles&&city!=City::Tokyo&&city!=City::Manila&&city!=City::SanFrancisco&&city!=City::Kinshasa){
+                        CHECK_THROWS(b->fly_direct(static_cast<City>(city)));
+            }
+        }
+                CHECK_NOTHROW(b->fly_direct(City::Kinshasa));
+    }
+    Board board;
+    OperationsExpert oe(board,City::SanFrancisco);
+    oe.build();
+    Dispatcher dispatcher(board,City::SanFrancisco);
+    for(int city = City::Atlanta;city!=City::invalidCity+1; ++city){
+        if(city!=City::Chicago&&city!=City::LosAngeles&&city!=City::Tokyo&&city!=City::Manila&&city!=City::SanFrancisco){
+                    CHECK_NOTHROW(dispatcher.fly_direct(static_cast<City>(city)));
+        }
+        dispatcher = Dispatcher(board,City::SanFrancisco);
+    }
+}
+ /*      fly_shuttle:
  *          1. city with research station
  *          2. city without research station
  *      build:
