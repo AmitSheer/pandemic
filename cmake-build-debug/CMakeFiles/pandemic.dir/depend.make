@@ -6,10 +6,6 @@ CMakeFiles/pandemic.dir/Board.cpp.o: ../Board.hpp
 CMakeFiles/pandemic.dir/Board.cpp.o: ../City.hpp
 CMakeFiles/pandemic.dir/Board.cpp.o: ../Color.hpp
 
-CMakeFiles/pandemic.dir/City.cpp.o: ../City.cpp
-CMakeFiles/pandemic.dir/City.cpp.o: ../City.hpp
-CMakeFiles/pandemic.dir/City.cpp.o: ../Color.hpp
-
 CMakeFiles/pandemic.dir/Demo1.cpp.o: ../Board.hpp
 CMakeFiles/pandemic.dir/Demo1.cpp.o: ../City.hpp
 CMakeFiles/pandemic.dir/Demo1.cpp.o: ../Color.hpp

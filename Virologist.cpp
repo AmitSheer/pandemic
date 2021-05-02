@@ -10,6 +10,6 @@ pandemic::Virologist &pandemic::Virologist::treat(int colorId) {
     return *this;
 }
 
-pandemic::Virologist::Virologist(pandemic::Board board, int cityId) : Player(std::move(board), cityId) {
+pandemic::Virologist::Virologist(pandemic::Board& board, int cityId) : Player(board, cityId) {
 
 }

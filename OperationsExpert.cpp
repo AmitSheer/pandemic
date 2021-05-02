@@ -10,6 +10,6 @@ pandemic::OperationsExpert &pandemic::OperationsExpert::build() {
 
 }
 
-pandemic::OperationsExpert::OperationsExpert(pandemic::Board board, int cityId): Player(std::move(board),cityId) {
+pandemic::OperationsExpert::OperationsExpert(pandemic::Board& board, int cityId): Player(board,cityId) {
     this->curr_role = typeid(this).name();
 }

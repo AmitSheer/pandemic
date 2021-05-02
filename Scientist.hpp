@@ -9,7 +9,7 @@ namespace pandemic{
     private:
         int n;
     public:
-        Scientist(pandemic::Board board, int cityId,int n);
+        Scientist(pandemic::Board& board, int cityId,int n);
         Scientist& discover_cure(int colorId);
     };
 }

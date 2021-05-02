@@ -10,6 +10,6 @@ pandemic::Dispatcher &pandemic::Dispatcher::direct_fly(int cityId) {
     return *this;
 }
 
-pandemic::Dispatcher::Dispatcher(pandemic::Board board, int cityId) : Player(std::move(board), cityId) {
+pandemic::Dispatcher::Dispatcher(pandemic::Board& board, int cityId) : Player(board, cityId) {
 
 }

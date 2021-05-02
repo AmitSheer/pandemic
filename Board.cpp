@@ -48,8 +48,8 @@ namespace pandemic{
         Board::citiesData[pandemic::City::Tehran] = pandemic::CityData(0,pandemic::Color::Black,{Baghdad,Moscow, Karachi,Delhi});
     }
 
-    int &pandemic::Board::operator[](pandemic::City city) {
-        return citiesData.at(city).infectionLevel;
+    int& Board::operator[](pandemic::City city) {
+        return citiesData[city].infectionLevel;
     }
 
     int pandemic::Board::operator[](pandemic::City city) const {

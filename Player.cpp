@@ -45,6 +45,6 @@ std::string pandemic::Player::role() {
     return curr_role;
 }
 
-pandemic::Player::Player(pandemic::Board board, int cityId) : board(std::move(board)), curr_city(cityId){
+pandemic::Player::Player(pandemic::Board &board, int cityId): board(board), curr_city(cityId) {
 
 }

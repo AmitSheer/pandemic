@@ -19,7 +19,7 @@ namespace pandemic{
         void loadRedCities();
     public:
         Board(){loadGame();}
-        int & operator[] (pandemic::City city);
+        int& operator[] (pandemic::City city);
         int operator[] (pandemic::City city) const;
         friend std::ostream& operator<<(std::ostream& os,const Board& board);
         bool is_clean();

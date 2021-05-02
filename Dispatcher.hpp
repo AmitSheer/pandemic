@@ -7,7 +7,7 @@
 namespace pandemic{
     class Dispatcher: public Player{
     public:
-        Dispatcher(pandemic::Board board, int cityId);
+        Dispatcher(pandemic::Board& board, int cityId);
         Dispatcher& direct_fly(int cityId);
     };
 }

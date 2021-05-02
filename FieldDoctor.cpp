@@ -11,6 +11,6 @@ pandemic::FieldDoctor &pandemic::FieldDoctor::treat(int colorId) {
 
 }
 
-pandemic::FieldDoctor::FieldDoctor(pandemic::Board board, int cityId) : Player(std::move(board), cityId) {
+pandemic::FieldDoctor::FieldDoctor(pandemic::Board& board, int cityId) : Player(board, cityId) {
 
 }

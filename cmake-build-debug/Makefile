@@ -412,33 +412,6 @@ Scientist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Scientist.cpp.s
 .PHONY : Scientist.cpp.s
 
-Test.o: Test.cpp.o
-
-.PHONY : Test.o
-
-# target to build an object file
-Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Test.cpp.o
-.PHONY : Test.cpp.o
-
-Test.i: Test.cpp.i
-
-.PHONY : Test.i
-
-# target to preprocess a source file
-Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Test.cpp.i
-.PHONY : Test.cpp.i
-
-Test.s: Test.cpp.s
-
-.PHONY : Test.s
-
-# target to generate assembly for a file
-Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Test.cpp.s
-.PHONY : Test.cpp.s
-
 Virologist.o: Virologist.cpp.o
 
 .PHONY : Virologist.o
@@ -505,9 +478,6 @@ help:
 	@echo "... Scientist.o"
 	@echo "... Scientist.i"
 	@echo "... Scientist.s"
-	@echo "... Test.o"
-	@echo "... Test.i"
-	@echo "... Test.s"
 	@echo "... Virologist.o"
 	@echo "... Virologist.i"
 	@echo "... Virologist.s"

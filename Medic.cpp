@@ -10,6 +10,6 @@ pandemic::Medic &pandemic::Medic::treat(int colorId) {
     return *this;
 }
 
-pandemic::Medic::Medic(pandemic::Board board, int cityId) : Player(std::move(board), cityId) {
+pandemic::Medic::Medic(pandemic::Board board, int cityId) : Player(board, cityId) {
 
 }

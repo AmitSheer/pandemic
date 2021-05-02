@@ -13,16 +13,16 @@ using namespace std;
 namespace pandemic{
     class Player {
     public:
-        Player(pandemic::Board board, int cityId);
+        Player(pandemic::Board& board, int cityId);
         ~Player();
-        Player& drive(int cityId);
-        Player& fly_direct(int cityId);
-        Player& fly_charter (int cityId);
-        Player& fly_shuttle(int cityId);
-        Player& build();
-        Player &discover_cure(pandemic::Color card_color);
-        Player& treat(int cityId);
-        Player& take_card(int cityId);
+        virtual Player& drive(int cityId);
+        virtual Player& fly_direct(int cityId);
+        virtual Player& fly_charter (int cityId);
+        virtual Player& fly_shuttle(int cityId);
+        virtual Player& build();
+        virtual Player &discover_cure(pandemic::Color card_color);
+        virtual Player& treat(int cityId);
+        virtual Player& take_card(int cityId);
         std::string role();
     private:
         int curr_city;

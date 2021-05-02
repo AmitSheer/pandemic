@@ -14,7 +14,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/amit/Downloads/pandemic/Player.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Player.cpp.o"
   "/home/amit/Downloads/pandemic/Researcher.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Researcher.cpp.o"
   "/home/amit/Downloads/pandemic/Scientist.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Scientist.cpp.o"
-  "/home/amit/Downloads/pandemic/Test.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Test.cpp.o"
   "/home/amit/Downloads/pandemic/Virologist.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir/Virologist.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")

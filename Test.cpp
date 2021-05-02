@@ -31,7 +31,11 @@ using namespace pandemic;
  *      drive:
  *          1. not connected city
  *          2. connected city
- *      fly_direct:
+ */
+ TEST_CASE("drive"){
+
+ }
+ /*      fly_direct:
  *          1. when have card
  *          2. when don't have card
  *          3. if Dispatcher and city has research station fly wherever he wants

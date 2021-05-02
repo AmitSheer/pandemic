@@ -115,7 +115,7 @@ int main() {
 	/* discover_cure action */
 
 	try {
-        player.discover_cure(pandemic::Color()); // illegal action: you only have 2 yellow cards remaining.
+		player.discover_cure(Color::Yellow); // illegal action: you only have 2 yellow cards remaining.
 	} catch (const exception& ex) {
 	 	cout << "   caught exception: " << ex.what() << endl;  // prints a meaningful error message.
 	}
@@ -124,7 +124,7 @@ int main() {
 	 .take_card(City::Bogota)
 	 .take_card(City::Lima);
 
-    player.discover_cure(pandemic::Color()); // legal action: you discard 5 yellow cards and discover a yellow cure.
+	player.discover_cure(Color::Yellow); // legal action: you discard 5 yellow cards and discover a yellow cure.
 	try {
 		player.fly_direct(City::Miami); // illegal action: you discarded the Miami card to discover a cure, so you cannot use this card.
 	} catch (const exception& ex) {
