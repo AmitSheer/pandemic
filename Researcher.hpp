@@ -7,7 +7,7 @@
 namespace pandemic{
     class Researcher: public Player{
     public:
-        Researcher(pandemic::Board& board, int cityId);
+        Researcher(pandemic::Board& board, City cityId);
         Researcher& discover_cure(Color colorId) override;
     };
 }

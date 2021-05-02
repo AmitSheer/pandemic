@@ -7,7 +7,7 @@
 #include <utility>
 
 
-pandemic::Researcher::Researcher(pandemic::Board& board, int cityId) : Player(board, cityId) {
+pandemic::Researcher::Researcher(pandemic::Board& board, City cityId) : Player(board, cityId) {
 
 }
 

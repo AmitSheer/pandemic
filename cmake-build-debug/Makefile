@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
 # Target rules for targets named pandemic
 
 # Build rule for target.
@@ -148,6 +161,7 @@ Board.o: Board.cpp.o
 
 # target to build an object file
 Board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Board.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Board.cpp.o
 .PHONY : Board.cpp.o
 
@@ -157,6 +171,7 @@ Board.i: Board.cpp.i
 
 # target to preprocess a source file
 Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Board.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Board.cpp.i
 .PHONY : Board.cpp.i
 
@@ -166,6 +181,7 @@ Board.s: Board.cpp.s
 
 # target to generate assembly for a file
 Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Board.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
@@ -202,6 +218,7 @@ Dispatcher.o: Dispatcher.cpp.o
 
 # target to build an object file
 Dispatcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Dispatcher.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Dispatcher.cpp.o
 .PHONY : Dispatcher.cpp.o
 
@@ -211,6 +228,7 @@ Dispatcher.i: Dispatcher.cpp.i
 
 # target to preprocess a source file
 Dispatcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Dispatcher.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Dispatcher.cpp.i
 .PHONY : Dispatcher.cpp.i
 
@@ -220,6 +238,7 @@ Dispatcher.s: Dispatcher.cpp.s
 
 # target to generate assembly for a file
 Dispatcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Dispatcher.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Dispatcher.cpp.s
 .PHONY : Dispatcher.cpp.s
 
@@ -229,6 +248,7 @@ FieldDoctor.o: FieldDoctor.cpp.o
 
 # target to build an object file
 FieldDoctor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FieldDoctor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/FieldDoctor.cpp.o
 .PHONY : FieldDoctor.cpp.o
 
@@ -238,6 +258,7 @@ FieldDoctor.i: FieldDoctor.cpp.i
 
 # target to preprocess a source file
 FieldDoctor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FieldDoctor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/FieldDoctor.cpp.i
 .PHONY : FieldDoctor.cpp.i
 
@@ -247,6 +268,7 @@ FieldDoctor.s: FieldDoctor.cpp.s
 
 # target to generate assembly for a file
 FieldDoctor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FieldDoctor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/FieldDoctor.cpp.s
 .PHONY : FieldDoctor.cpp.s
 
@@ -256,6 +278,7 @@ GeneSplicer.o: GeneSplicer.cpp.o
 
 # target to build an object file
 GeneSplicer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/GeneSplicer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/GeneSplicer.cpp.o
 .PHONY : GeneSplicer.cpp.o
 
@@ -265,6 +288,7 @@ GeneSplicer.i: GeneSplicer.cpp.i
 
 # target to preprocess a source file
 GeneSplicer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/GeneSplicer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/GeneSplicer.cpp.i
 .PHONY : GeneSplicer.cpp.i
 
@@ -274,6 +298,7 @@ GeneSplicer.s: GeneSplicer.cpp.s
 
 # target to generate assembly for a file
 GeneSplicer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/GeneSplicer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/GeneSplicer.cpp.s
 .PHONY : GeneSplicer.cpp.s
 
@@ -283,6 +308,7 @@ Medic.o: Medic.cpp.o
 
 # target to build an object file
 Medic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Medic.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Medic.cpp.o
 .PHONY : Medic.cpp.o
 
@@ -292,6 +318,7 @@ Medic.i: Medic.cpp.i
 
 # target to preprocess a source file
 Medic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Medic.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Medic.cpp.i
 .PHONY : Medic.cpp.i
 
@@ -301,6 +328,7 @@ Medic.s: Medic.cpp.s
 
 # target to generate assembly for a file
 Medic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Medic.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Medic.cpp.s
 .PHONY : Medic.cpp.s
 
@@ -310,6 +338,7 @@ OperationsExpert.o: OperationsExpert.cpp.o
 
 # target to build an object file
 OperationsExpert.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/OperationsExpert.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/OperationsExpert.cpp.o
 .PHONY : OperationsExpert.cpp.o
 
@@ -319,6 +348,7 @@ OperationsExpert.i: OperationsExpert.cpp.i
 
 # target to preprocess a source file
 OperationsExpert.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/OperationsExpert.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/OperationsExpert.cpp.i
 .PHONY : OperationsExpert.cpp.i
 
@@ -328,6 +358,7 @@ OperationsExpert.s: OperationsExpert.cpp.s
 
 # target to generate assembly for a file
 OperationsExpert.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/OperationsExpert.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/OperationsExpert.cpp.s
 .PHONY : OperationsExpert.cpp.s
 
@@ -337,6 +368,7 @@ Player.o: Player.cpp.o
 
 # target to build an object file
 Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Player.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Player.cpp.o
 .PHONY : Player.cpp.o
 
@@ -346,6 +378,7 @@ Player.i: Player.cpp.i
 
 # target to preprocess a source file
 Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Player.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Player.cpp.i
 .PHONY : Player.cpp.i
 
@@ -355,6 +388,7 @@ Player.s: Player.cpp.s
 
 # target to generate assembly for a file
 Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Player.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
@@ -364,6 +398,7 @@ Researcher.o: Researcher.cpp.o
 
 # target to build an object file
 Researcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Researcher.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Researcher.cpp.o
 .PHONY : Researcher.cpp.o
 
@@ -373,6 +408,7 @@ Researcher.i: Researcher.cpp.i
 
 # target to preprocess a source file
 Researcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Researcher.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Researcher.cpp.i
 .PHONY : Researcher.cpp.i
 
@@ -382,6 +418,7 @@ Researcher.s: Researcher.cpp.s
 
 # target to generate assembly for a file
 Researcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Researcher.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Researcher.cpp.s
 .PHONY : Researcher.cpp.s
 
@@ -391,6 +428,7 @@ Scientist.o: Scientist.cpp.o
 
 # target to build an object file
 Scientist.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Scientist.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Scientist.cpp.o
 .PHONY : Scientist.cpp.o
 
@@ -400,6 +438,7 @@ Scientist.i: Scientist.cpp.i
 
 # target to preprocess a source file
 Scientist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Scientist.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Scientist.cpp.i
 .PHONY : Scientist.cpp.i
 
@@ -409,6 +448,7 @@ Scientist.s: Scientist.cpp.s
 
 # target to generate assembly for a file
 Scientist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Scientist.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Scientist.cpp.s
 .PHONY : Scientist.cpp.s
 
@@ -418,6 +458,7 @@ Test.o: Test.cpp.o
 
 # target to build an object file
 Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Test.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Test.cpp.o
 .PHONY : Test.cpp.o
 
@@ -427,6 +468,7 @@ Test.i: Test.cpp.i
 
 # target to preprocess a source file
 Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Test.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Test.cpp.i
 .PHONY : Test.cpp.i
 
@@ -436,6 +478,7 @@ Test.s: Test.cpp.s
 
 # target to generate assembly for a file
 Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Test.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Test.cpp.s
 .PHONY : Test.cpp.s
 
@@ -445,6 +488,7 @@ Virologist.o: Virologist.cpp.o
 
 # target to build an object file
 Virologist.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Virologist.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Virologist.cpp.o
 .PHONY : Virologist.cpp.o
 
@@ -454,6 +498,7 @@ Virologist.i: Virologist.cpp.i
 
 # target to preprocess a source file
 Virologist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Virologist.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Virologist.cpp.i
 .PHONY : Virologist.cpp.i
 
@@ -463,6 +508,7 @@ Virologist.s: Virologist.cpp.s
 
 # target to generate assembly for a file
 Virologist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Virologist.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pandemic.dir/build.make CMakeFiles/pandemic.dir/Virologist.cpp.s
 .PHONY : Virologist.cpp.s
 
@@ -475,6 +521,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pandemic"
+	@echo "... test"
 	@echo "... Board.o"
 	@echo "... Board.i"
 	@echo "... Board.s"

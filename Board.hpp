@@ -12,16 +12,24 @@ namespace pandemic{
     class Board {
     private:
         std::unordered_map<pandemic::City,pandemic::CityData> citiesData;
+        std::unordered_map<pandemic::Color,bool> cure_found;
         void loadGame();
         void loadBlackCities();
         void loadBlueCities();
         void loadYellowCities();
         void loadRedCities();
     public:
-        Board(){loadGame();}
+        Board(){
+            loadGame();
+            cure_found[Color::Blue] = false;
+            cure_found[Color::Red] = false;
+            cure_found[Color::Black] = false;
+            cure_found[Color::Yellow] = false;
+        }
         int& operator[] (pandemic::City city);
         int operator[] (pandemic::City city) const;
         friend std::ostream& operator<<(std::ostream& os,const Board& board);
         bool is_clean();
+        void remove_cure(){};
     };
 }

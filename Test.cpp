@@ -44,7 +44,7 @@ std::vector<Player> initPlayerTypes(){
                                       GeneSplicer(e,City::SanFrancisco),
                                       Medic(f,City::SanFrancisco),
                                       Researcher(g,City::SanFrancisco),
-                                      Scientist(h,City::SanFrancisco,4),
+                                      Scientist(h,City::SanFrancisco,5),
                                       Virologist(i,City::SanFrancisco)
                                       };
     return playerList;
@@ -114,40 +114,130 @@ TEST_CASE("drive"){
 TEST_CASE("fly_charter"){
     auto pList = initPlayerTypes();
     for(auto b=pList.begin(); b!=pList.end();++b){
-        b->take_card(City::Kinshasa);
-        for(int city = City::Atlanta;city!=City::invalidCity+1; ++city){
-            if(city!=City::Chicago&&city!=City::LosAngeles&&city!=City::Tokyo&&city!=City::Manila&&city!=City::SanFrancisco&&city!=City::Kinshasa){
-                        CHECK_THROWS(b->fly_direct(static_cast<City>(city)));
+        b->take_card(City::SanFrancisco);
+        for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+            if(city!=City::SanFrancisco){
+                CHECK_NOTHROW(b->fly_charter(static_cast<City>(city)));
             }
+            b->take_card(static_cast<City>(city));
         }
-                CHECK_NOTHROW(b->fly_direct(City::Kinshasa));
-    }
-    Board board;
-    OperationsExpert oe(board,City::SanFrancisco);
-    oe.build();
-    Dispatcher dispatcher(board,City::SanFrancisco);
-    for(int city = City::Atlanta;city!=City::invalidCity+1; ++city){
-        if(city!=City::Chicago&&city!=City::LosAngeles&&city!=City::Tokyo&&city!=City::Manila&&city!=City::SanFrancisco){
-                    CHECK_NOTHROW(dispatcher.fly_direct(static_cast<City>(city)));
+        b->fly_charter(City::Moscow);
+        for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+            if(city!=City::Moscow){
+                        CHECK_THROWS(b->fly_charter(static_cast<City>(city)));
+            }
+            b->take_card(static_cast<City>(city));
         }
-        dispatcher = Dispatcher(board,City::SanFrancisco);
     }
 }
  /*      fly_shuttle:
  *          1. city with research station
  *          2. city without research station
- *      build:
+  */
+TEST_CASE("fly_shuttle"){
+    for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+        for(int innerCity = City::Atlanta; innerCity != City::invalidCity; ++innerCity){
+            if(innerCity != city) {
+                Board board;
+                Player pA(board, city);
+                Player pB(board, innerCity);
+                pA.take_card(static_cast<City>(city));
+                pA.build();
+                pB.take_card(static_cast<City>(innerCity));
+                pB.build();
+                pB.fly_shuttle(static_cast<City>(city));
+            }
+        }
+    }
+}
+ /*      build:
  *          1. have city card
  *          2. try more then once
  *          3. if Operation Expert no need to lose city card
- *      discover_cure:
+  */
+TEST_CASE("build"){
+    auto pList = initPlayerTypes();
+    for (const auto& item : pList){
+        for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+            static_cast<Player>(item).take_card(static_cast<City>(city));
+            static_cast<Player>(item).fly_direct(static_cast<City>(city));
+            static_cast<Player>(item).take_card(static_cast<City>(city));
+            CHECK_NOTHROW(static_cast<Player>(item).build());
+        }
+        for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+            static_cast<Player>(item).take_card(static_cast<City>(city));
+            static_cast<Player>(item).fly_direct(static_cast<City>(city));
+            CHECK_THROWS(static_cast<Player>(item).build());
+        }
+    }
+    Board board;
+    for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+        OperationsExpert oe(board,city);
+        oe.take_card(static_cast<City>(city));
+        oe.fly_direct(static_cast<City>(city));
+        CHECK_NOTHROW(oe.build());
+    }
+}
+ /*      discover_cure:
  *          1. city with research station and have 5 cards of same city color
  *          2. city without research station and have 5 cards of same city color
  *          3. city that the cure was already found in
  *          4. if Scientist then lose n number of cards
  *          5. if Researcher can discover_cure in any city
  *          6. if GeneSplicer use any 5 cards to find cure
- *      treat:
+  */
+TEST_CASE("discover_cure"){
+    auto pList = initPlayerTypes();
+    vector<City> CityByColor[4];
+    CityByColor[0]={HongKong,Jakarta,Manila,Osaka,Seoul};
+    CityByColor[1]={Bogota,BuenosAires,Johannesburg,Khartoum,Kinshasa};
+    CityByColor[2]={Algiers,Baghdad,Cairo,Chennai,Delhi};
+    CityByColor[3]={Atlanta,Chicago,Essen,Madrid,Milan};
+    for (int i = 0; i < 4; ++i) {
+        for (const auto& item : pList){
+            static_cast<Player>(item).take_card(static_cast<City>(CityByColor[i].at(0)));
+            static_cast<Player>(item).fly_direct(static_cast<City>(CityByColor[i].at(0)));
+            static_cast<Player>(item).take_card(static_cast<City>(CityByColor[i].at(0)));
+            static_cast<Player>(item).build();
+            for (unsigned long l = 0; l < 5; ++l){
+                CHECK_THROWS(static_cast<Player>(item).discover_cure(static_cast<pandemic::Color>(i)));
+                static_cast<Player>(item).take_card(static_cast<City>(CityByColor[i].at(l)));
+            }
+            CHECK_NOTHROW(static_cast<Player>(item).discover_cure(static_cast<pandemic::Color>(i)));
+        }
+        for(int h=0;h<=5;++h){
+            Board board;
+            Scientist s(board, CityByColor[i].at(0),h);
+            s.take_card(static_cast<City>(CityByColor[i].at(0)));
+            s.build();
+            for (unsigned long j = 0; j <h; ++j) {
+                CHECK_THROWS(s.discover_cure(static_cast<pandemic::Color>(i)));
+                s.take_card(static_cast<City>(CityByColor[i].at(j)));
+            }
+            CHECK_NOTHROW(s.discover_cure(static_cast<pandemic::Color>(i)));
+        }
+        Board board;
+        Researcher researcher(board, CityByColor[i].at(0));
+        for (unsigned long  j = 0; j <5; ++j) {
+            CHECK_THROWS(researcher.discover_cure(static_cast<pandemic::Color>(i)));
+            researcher.take_card(static_cast<City>(CityByColor[i].at(j)));
+        }
+        CHECK_NOTHROW(researcher.discover_cure(static_cast<pandemic::Color>(i)));
+        for (unsigned long  j = 0; j < 5; ++j) {
+            board = Board();
+            GeneSplicer gs(board, CityByColor[i].at(j));
+            gs.take_card(static_cast<City>(CityByColor[i].at(j)));
+            gs.build();
+            gs.take_card(static_cast<City>(CityByColor[0].at(j)));
+            gs.take_card(static_cast<City>(CityByColor[1].at(j)));
+            gs.take_card(static_cast<City>(CityByColor[2].at(j)));
+            gs.take_card(static_cast<City>(CityByColor[3].at(j)));
+            gs.take_card(static_cast<City>(CityByColor[3].at(j)));
+            gs.discover_cure(static_cast<pandemic::Color>(i));
+        }
+    }
+}
+ /*      treat:
  *          1. decrease current city infection level
  *          2. remove if cure is found then infection reduced to 0
  *          3. infection level is 0 then throw exception
@@ -155,7 +245,12 @@ TEST_CASE("fly_charter"){
  *          5. if Medic and cure was found then automatically remove infection level from any visited city with same disease
  *          6. if Virologist has city card of any city, can treat that city
  *          7. if FieldDoctor can treat any cities connected to current city
- *      role:
+  */
+ TEST_CASE("treat"){
+     auto pList = initPlayerTypes();
+
+ }
+ /*      role:
  *          1. return correct role
  *          1.1 che this for all available roles
  *
