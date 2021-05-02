@@ -3,10 +3,10 @@
 //
 
 #include "FieldDoctor.hpp"
-
+#include "Color.hpp"
 #include <utility>
 
-pandemic::FieldDoctor &pandemic::FieldDoctor::treat(int colorId) {
+pandemic::FieldDoctor &pandemic::FieldDoctor::treat(City cityId) {
     return *this;
 
 }

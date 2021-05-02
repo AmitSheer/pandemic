@@ -8,6 +8,6 @@ namespace pandemic{
     class Dispatcher: public Player{
     public:
         Dispatcher(pandemic::Board& board, int cityId);
-        Dispatcher& direct_fly(int cityId);
+        Dispatcher& fly_direct(City cityId) override;
     };
 }

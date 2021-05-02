@@ -144,6 +144,9 @@
 		<Unit filename="/home/amit/Downloads/pandemic/Scientist.hpp">
 			<Option target="pandemic"/>
 		</Unit>
+		<Unit filename="/home/amit/Downloads/pandemic/Test.cpp">
+			<Option target="pandemic"/>
+		</Unit>
 		<Unit filename="/home/amit/Downloads/pandemic/Virologist.cpp">
 			<Option target="pandemic"/>
 		</Unit>

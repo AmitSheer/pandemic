@@ -3,10 +3,11 @@
 //
 
 #include "GeneSplicer.hpp"
+#include "Color.hpp"
 
 #include <utility>
 
-pandemic::GeneSplicer &pandemic::GeneSplicer::discover_cure(int colorId) {
+pandemic::GeneSplicer &pandemic::GeneSplicer::discover_cure(Color colorId) {
     return *this;
 
 }

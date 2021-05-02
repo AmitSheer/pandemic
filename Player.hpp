@@ -15,14 +15,14 @@ namespace pandemic{
     public:
         Player(pandemic::Board& board, int cityId);
         ~Player();
-        virtual Player& drive(int cityId);
-        virtual Player& fly_direct(int cityId);
-        virtual Player& fly_charter (int cityId);
-        virtual Player& fly_shuttle(int cityId);
+        virtual Player& drive(City cityId);
+        virtual Player& fly_direct(City cityId);
+        virtual Player& fly_charter (City cityId);
+        virtual Player& fly_shuttle(City cityId);
         virtual Player& build();
         virtual Player &discover_cure(pandemic::Color card_color);
-        virtual Player& treat(int cityId);
-        virtual Player& take_card(int cityId);
+        virtual Player& treat(City cityId);
+        virtual Player& take_card(City cityId);
         std::string role();
     private:
         int curr_city;

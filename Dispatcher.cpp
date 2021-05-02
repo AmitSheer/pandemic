@@ -6,7 +6,7 @@
 
 #include <utility>
 
-pandemic::Dispatcher &pandemic::Dispatcher::direct_fly(int cityId) {
+pandemic::Dispatcher &pandemic::Dispatcher::fly_direct(City cityId) {
     return *this;
 }
 

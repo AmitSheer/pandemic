@@ -10,6 +10,6 @@ namespace pandemic{
         int n;
     public:
         Scientist(pandemic::Board& board, int cityId,int n);
-        Scientist& discover_cure(int colorId);
+        Scientist& discover_cure(Color colorId) override;
     };
 }

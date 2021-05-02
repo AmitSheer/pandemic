@@ -6,10 +6,11 @@
 
 #include <utility>
 
-pandemic::Researcher &pandemic::Researcher::discover_cure(int colorId) {
-    return *this;
-}
 
 pandemic::Researcher::Researcher(pandemic::Board& board, int cityId) : Player(board, cityId) {
 
+}
+
+pandemic::Researcher &pandemic::Researcher::discover_cure(pandemic::Color colorId) {
+    return *this;
 }

@@ -26,14 +26,58 @@ using namespace doctest;
 #include "Virologist.hpp"
 using namespace pandemic;
 
+
+std::vector<Player> initPlayerTypes(){
+    Board a;
+    Board b;
+    Board c;
+    Board d;
+    Board e;
+    Board f;
+    Board g;
+    std::vector<Player> playerList = {Player(b,City::SanFrancisco),Dispatcher(a,City::SanFrancisco),FieldDoctor(c,City::SanFrancisco),
+                                      };
+    return playerList;
+}
 /**
  *  player Tests:
  *      drive:
  *          1. not connected city
  *          2. connected city
  */
- TEST_CASE("drive"){
 
+void check_drive(Player& p){
+    CHECK_NOTHROW(p.drive(City::Chicago));
+    CHECK_NOTHROW(p.drive(City::SanFrancisco));
+    CHECK_NOTHROW(p.drive(City::LosAngeles));
+    CHECK_NOTHROW(p.drive(City::SanFrancisco));
+    CHECK_NOTHROW(p.drive(City::Tokyo));
+    CHECK_NOTHROW(p.drive(City::SanFrancisco));
+    CHECK_NOTHROW(p.drive(City::Manila));
+    CHECK_NOTHROW(p.drive(City::SanFrancisco));
+    for(int city = City::Atlanta;city!=City::invalidCity+1; ++city){
+        if(city!=City::Chicago||city!=City::LosAngeles||city!=City::Tokyo||city!=City::Manila||city!=City::SanFrancisco){
+            CHECK_THROWS(p.drive(city));
+        }
+    }
+}
+TEST_CASE("drive"){
+     Board board;
+     Player A(board,City::SanFrancisco);
+    check_drive(A);
+     board = Board();
+     Virologist virologist(board, City::SanFrancisco);
+    check_drive(virologist);
+    board = Board();
+    GeneSplicer g(board, City::SanFrancisco);
+    check_drive(g);
+    board = Board();
+    FieldDoctor fd(board, City::SanFrancisco);
+    check_drive(fd);
+    board = Board();
+    Virologist virologist(board, City::SanFrancisco);
+    board = Board();
+    Virologist virologist(board, City::SanFrancisco);
  }
  /*      fly_direct:
  *          1. when have card
@@ -41,7 +85,13 @@ using namespace pandemic;
  *          3. if Dispatcher and city has research station fly wherever he wants
  *          4. if Dispatcher and city doesnt have research station, and dont have city card
  *          5. if Dispatcher and city doesnt have research station, and have city card
- *      fly_charter:
+  */
+ TEST_CASE("fly_direct"){
+    Board board;
+    Player A(board,City::SanFrancisco);
+
+ }
+ /*      fly_charter:
  *          1. when have current city card
  *          2. when dont have current city card
  *      fly_shuttle:

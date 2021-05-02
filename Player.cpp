@@ -9,19 +9,19 @@ pandemic::Player::~Player() {
 
 }
 
-pandemic::Player &pandemic::Player::drive(int cityId) {
+pandemic::Player &pandemic::Player::drive(City cityId) {
     return *this;
 }
 
-pandemic::Player &pandemic::Player::fly_direct(int cityId) {
+pandemic::Player &pandemic::Player::fly_direct(City cityId) {
     return *this;
 }
 
-pandemic::Player &pandemic::Player::fly_charter(int cityId) {
+pandemic::Player &pandemic::Player::fly_charter(City cityId) {
     return *this;
 }
 
-pandemic::Player &pandemic::Player::fly_shuttle(int cityId) {
+pandemic::Player &pandemic::Player::fly_shuttle(City cityId) {
     return *this;
 }
 
@@ -33,11 +33,11 @@ pandemic::Player &pandemic::Player::discover_cure(pandemic::Color card_color) {
     return *this;
 }
 
-pandemic::Player &pandemic::Player::treat(int cityId) {
+pandemic::Player &pandemic::Player::treat(City cityId) {
     return *this;
 }
 
-pandemic::Player &pandemic::Player::take_card(int cityId) {
+pandemic::Player &pandemic::Player::take_card(City cityId) {
     return *this;
 }
 

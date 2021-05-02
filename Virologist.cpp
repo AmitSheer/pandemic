@@ -6,10 +6,11 @@
 
 #include <utility>
 
-pandemic::Virologist &pandemic::Virologist::treat(int colorId) {
-    return *this;
-}
 
 pandemic::Virologist::Virologist(pandemic::Board& board, int cityId) : Player(board, cityId) {
 
+}
+
+pandemic::Virologist &pandemic::Virologist::treat(pandemic::Color colorId) {
+    return *this;
 }

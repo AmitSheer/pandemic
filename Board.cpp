@@ -15,6 +15,7 @@ using namespace std;
 
 namespace pandemic{
     void Board::loadGame() {
+        Board::citiesData.clear();
         Board::loadBlackCities();
         Board::loadBlueCities();
         Board::loadYellowCities();

@@ -8,6 +8,6 @@ namespace pandemic{
     class FieldDoctor: public Player{
     public:
         FieldDoctor(pandemic::Board& board, int cityId);
-        FieldDoctor& treat(int colorId);
+        FieldDoctor& treat(City cityId) override;
     };
 }

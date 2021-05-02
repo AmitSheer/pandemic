@@ -5,10 +5,11 @@
 
 #include <utility>
 
-pandemic::Scientist &pandemic::Scientist::discover_cure(int colorId) {
-    return *this;
-}
 
 pandemic::Scientist::Scientist(pandemic::Board& board, int cityId, int n): Player(board,cityId), n(n) {
 
+}
+
+pandemic::Scientist &pandemic::Scientist::discover_cure(pandemic::Color colorId) {
+    return *this;
 }
