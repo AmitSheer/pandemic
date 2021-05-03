@@ -6,7 +6,6 @@
 #include "doctest.h"
 #include "doctest.h"
 #include <string>
-#include <experimental/random>
 #include <unistd.h>
 #include <algorithm>
 using namespace std;
@@ -26,8 +25,21 @@ using namespace doctest;
 #include "Virologist.hpp"
 using namespace pandemic;
 
-
+std::vector<Player> initPlayerTypesWithBoard(Board& board){
+    std::vector<Player> playerList = {Player(board,City::SanFrancisco),
+                                      Dispatcher(board,City::SanFrancisco),
+                                      FieldDoctor(board,City::SanFrancisco),
+                                      OperationsExpert(board,City::SanFrancisco),
+                                      GeneSplicer(board,City::SanFrancisco),
+                                      Medic(board,City::SanFrancisco),
+                                      Researcher(board,City::SanFrancisco),
+                                      Scientist(board,City::SanFrancisco,5),
+                                      Virologist(board,City::SanFrancisco)
+    };
+    return playerList;
+}
 std::vector<Player> initPlayerTypes(){
+
     Board a;
     Board b;
     Board c;
@@ -247,8 +259,14 @@ TEST_CASE("discover_cure"){
  *          7. if FieldDoctor can treat any cities connected to current city
   */
  TEST_CASE("treat"){
-     auto pList = initPlayerTypes();
-
+     Board board;
+     auto pList = initPlayerTypesWithBoard(board);
+     for (const auto& item : pList){
+         board[City::SanFrancisco]=1;
+         CHECK_NOTHROW(static_cast<Player>(item).treat(City::SanFrancisco));
+         CHECK(board[City::SanFrancisco]==0);
+         CHECK_NOTHROW(static_cast<Player>(item).treat(City::SanFrancisco));
+    }
  }
  /*      role:
  *          1. return correct role
