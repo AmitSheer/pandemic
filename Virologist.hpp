@@ -8,7 +8,7 @@ namespace pandemic{
     class Virologist: public Player{
     public:
         Virologist(pandemic::Board& board, int cityId);
-        Virologist& treat(Color colorId);
+        Virologist& treat(City cityId) override;
     };
 }
 

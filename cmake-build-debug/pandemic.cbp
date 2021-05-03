@@ -8,212 +8,147 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/amits/sharevm/pandemic/cmake-build-debug"/>
+				<Option working_dir="/home/amit/Desktop/pandemic/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/amits/sharevm/pandemic/cmake-build-debug"/>
+				<Option working_dir="/home/amit/Desktop/pandemic/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/amits/sharevm/pandemic/cmake-build-debug"/>
+				<Option working_dir="/home/amit/Desktop/pandemic/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
-				<Option output="/Users/amits/sharevm/pandemic/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/amits/sharevm/pandemic/cmake-build-debug"/>
+				<Option output="/home/amit/Desktop/pandemic/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/amit/Desktop/pandemic/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test/fast">
-				<Option output="/Users/amits/sharevm/pandemic/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/amits/sharevm/pandemic/cmake-build-debug"/>
+				<Option output="/home/amit/Desktop/pandemic/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/amit/Desktop/pandemic/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 test/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="pandemic">
-				<Option output="/Users/amits/sharevm/pandemic/cmake-build-debug/pandemic" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/amits/sharevm/pandemic/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 pandemic"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="pandemic/fast">
-				<Option output="/Users/amits/sharevm/pandemic/cmake-build-debug/pandemic" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/amits/sharevm/pandemic/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 pandemic/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/amits/sharevm/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/amits/sharevm/pandemic/Board.cpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Board.cpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Board.hpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Board.hpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/City.hpp">
+		<Unit filename="/home/amit/Desktop/pandemic/City.hpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Demo1.cpp">
-			<Option target="pandemic"/>
-		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Dispatcher.cpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Dispatcher.cpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Dispatcher.hpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Dispatcher.hpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/FieldDoctor.cpp">
+		<Unit filename="/home/amit/Desktop/pandemic/FieldDoctor.cpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/FieldDoctor.hpp">
+		<Unit filename="/home/amit/Desktop/pandemic/FieldDoctor.hpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/GeneSplicer.cpp">
+		<Unit filename="/home/amit/Desktop/pandemic/GeneSplicer.cpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/GeneSplicer.hpp">
+		<Unit filename="/home/amit/Desktop/pandemic/GeneSplicer.hpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Medic.cpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Medic.cpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Medic.hpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Medic.hpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/OperationsExpert.cpp">
+		<Unit filename="/home/amit/Desktop/pandemic/OperationsExpert.cpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/OperationsExpert.hpp">
+		<Unit filename="/home/amit/Desktop/pandemic/OperationsExpert.hpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Player.cpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Player.cpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Player.hpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Player.hpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Researcher.cpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Researcher.cpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Researcher.hpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Researcher.hpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Scientist.cpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Scientist.cpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Scientist.hpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Scientist.hpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Test.cpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Test.cpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Virologist.cpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Virologist.cpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/Virologist.hpp">
+		<Unit filename="/home/amit/Desktop/pandemic/Virologist.hpp">
 			<Option target="test"/>
-			<Option target="pandemic"/>
 		</Unit>
-		<Unit filename="/Users/amits/sharevm/pandemic/CMakeLists.txt">
+		<Unit filename="/home/amit/Desktop/pandemic/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

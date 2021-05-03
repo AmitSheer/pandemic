@@ -258,29 +258,146 @@ TEST_CASE("discover_cure"){
  *          6. if Virologist has city card of any city, can treat that city
  *          7. if FieldDoctor can treat any cities connected to current city
   */
- TEST_CASE("treat"){
+ TEST_CASE("treat default"){
      Board board;
      auto pList = initPlayerTypesWithBoard(board);
-     for (const auto& item : pList){
-         board[City::SanFrancisco]=1;
-         CHECK_NOTHROW(static_cast<Player>(item).treat(City::SanFrancisco));
-         CHECK(board[City::SanFrancisco]==0);
-         CHECK_NOTHROW(static_cast<Player>(item).treat(City::SanFrancisco));
-    }
+     for (const Player& item : pList){
+         if(item.role()!="Medic"){
+             board[City::SanFrancisco]=1;
+             CHECK_NOTHROW(static_cast<Player>(item).treat(City::SanFrancisco));
+             CHECK(board[City::SanFrancisco]==0);
+             CHECK_THROWS(static_cast<Player>(item).treat(City::SanFrancisco));
+             board[City::SanFrancisco]=2;
+             CHECK_NOTHROW(static_cast<Player>(item).treat(City::SanFrancisco));
+             CHECK(board[City::SanFrancisco]==1);
+         }
+     }
  }
+TEST_CASE("treat Medic"){
+    Board board;
+    Medic medic(board,City::SanFrancisco);
+    vector<City> CityByColor[4];
+    CityByColor[0]={HongKong,Jakarta,Manila,Osaka,Seoul};
+    CityByColor[1]={Bogota,BuenosAires,Johannesburg,Khartoum,Kinshasa};
+    CityByColor[2]={Algiers,Baghdad,Cairo,Chennai,Delhi};
+    CityByColor[3]={Atlanta,Chicago,Essen,Madrid,Milan};
+    for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+        board[static_cast<City>(city)] =1;
+        CHECK_THROWS(medic.treat(static_cast<City>(city)));
+        CHECK(board[static_cast<City>(city)]==1);
+        medic.take_card(static_cast<City>(city));
+        CHECK_NOTHROW(medic.treat(static_cast<City>(city)));
+        CHECK(board[static_cast<City>(city)]==0);
+        board[static_cast<City>(city)] =3;
+        medic.take_card(static_cast<City>(city));
+        CHECK_NOTHROW(medic.treat(static_cast<City>(city)));
+        CHECK(board[static_cast<City>(city)]==0);
+        OperationsExpert oe{board, static_cast<City>(city)};
+        oe.build();
+        medic.take_card(static_cast<City>(city));
+        for (unsigned long i = 0; i < 5; ++i) {
+            oe.take_card(CityByColor[board.getCityColor(static_cast<City>(city))].at(i));
+        }
+        oe.discover_cure(board.getCityColor(static_cast<City>(city)));
+        board[static_cast<City>(city)] =3;
+        medic.fly_direct(static_cast<City>(city));
+        CHECK(board[static_cast<City>(city)]==0);
+        medic.take_card(static_cast<City>(city));
+        CHECK_THROWS(medic.treat(static_cast<City>(city)));
+        CHECK(board[static_cast<City>(city)]==0);
+        board.remove_cures();
+    }
+}
+TEST_CASE("treat Virologist"){
+    Board board;
+    Virologist virologist(board,City::SanFrancisco);
+    for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+        board[static_cast<City>(city)] =1;
+        virologist.take_card(static_cast<City>(city));
+        CHECK_NOTHROW(virologist.treat(static_cast<City>(city)));
+        CHECK(board[static_cast<City>(city)]==0);
+    }
+}
+TEST_CASE("treat FieldDoctor"){
+    Board board;
+    for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+        FieldDoctor fieldDoctor(board,static_cast<City>(city));
+        for (unsigned long i = 0; i < board.getNei(static_cast<City>(city)).size(); ++i) {
+            board[board.getNei(static_cast<City>(city)).at(i)] = 1;
+            CHECK_NOTHROW(fieldDoctor.treat(board.getNei(static_cast<City>(city)).at(i)));
+            CHECK(board[static_cast<City>(city)]==0);
+            board[board.getNei(static_cast<City>(city)).at(i)] = 2;
+            CHECK_NOTHROW(fieldDoctor.treat(board.getNei(static_cast<City>(city)).at(i)));
+            CHECK(board[board.getNei(static_cast<City>(city)).at(i)]==1);
+        }
+        board[static_cast<City>(city)] =1;
+        fieldDoctor.take_card(static_cast<City>(city));
+        CHECK_NOTHROW(fieldDoctor.treat(static_cast<City>(city)));
+        CHECK(board[static_cast<City>(city)]==0);
+    }
+}
  /*      role:
  *          1. return correct role
  *          1.1 che this for all available roles
  *
 */
-
+TEST_CASE("role"){
+    auto pList = initPlayerTypes();
+    Board board;
+    Player player(board,City::SanFrancisco);
+            CHECK(player.role()=="Player");
+    Dispatcher dispatcher(board,City::SanFrancisco);
+            CHECK(dispatcher.role()=="Dispatcher");
+    FieldDoctor fieldDoctor(board,City::SanFrancisco);
+            CHECK(fieldDoctor.role()=="FieldDoctor");
+    OperationsExpert operationsExpert(board,City::SanFrancisco);
+            CHECK(operationsExpert.role()=="OperationsExpert");
+    GeneSplicer geneSplicer(board,City::SanFrancisco);
+            CHECK(geneSplicer.role()=="GeneSplicer");
+    Medic medic(board,City::SanFrancisco);
+            CHECK(medic.role()=="Medic");
+    Researcher researcher(board,City::SanFrancisco);
+            CHECK(researcher.role()=="Researcher");
+    Scientist scientist(board,City::SanFrancisco,4);
+            CHECK(scientist.role()=="Scientist");
+    Virologist virologist(board,City::SanFrancisco);
+            CHECK(virologist.role()=="Virologist");
+}
 /**
  *   Board:
  *      operator[]:
  *          1. get infection level of city
  *          2. set infection level of city
- *      is_clean:
+ */
+TEST_CASE("operator[]"){
+    auto pList = initPlayerTypes();
+    Board board;
+    for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+        board[static_cast<City>(city)]=city;
+    }
+    for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+        CHECK(board[static_cast<City>(city)]==city);
+    }
+
+}
+ /*      is_clean:
  *          1. all infection levels 0 = true
  *          2. not all infection levels 0 = false
 */
 
+TEST_CASE("is_clean"){
+    auto pList = initPlayerTypes();
+    Board board;
+    unsigned long size = City::invalidCity;
+    for (unsigned long i = 0; i < size; ++i) {
+        for(int city = City::Atlanta;city<=i; ++city){
+            board[static_cast<City>(city)]=city;
+        }
+        CHECK_FALSE(board.is_clean());
+    }
+    for(int city = City::Atlanta;city!=City::invalidCity; ++city){
+        board[static_cast<City>(city)]=0;
+    }
+
+
+}

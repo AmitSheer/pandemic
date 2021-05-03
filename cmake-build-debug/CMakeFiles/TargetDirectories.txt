@@ -1,4 +1,3 @@
-/Users/amits/sharevm/pandemic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/amits/sharevm/pandemic/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/amits/sharevm/pandemic/cmake-build-debug/CMakeFiles/test.dir
-/Users/amits/sharevm/pandemic/cmake-build-debug/CMakeFiles/pandemic.dir
+/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir

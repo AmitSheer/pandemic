@@ -11,6 +11,6 @@ pandemic::Virologist::Virologist(pandemic::Board& board, int cityId) : Player(bo
 
 }
 
-pandemic::Virologist &pandemic::Virologist::treat(pandemic::Color colorId) {
+pandemic::Virologist &pandemic::Virologist::treat(pandemic::City cityId) {
     return *this;
 }

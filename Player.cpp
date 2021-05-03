@@ -41,7 +41,7 @@ pandemic::Player &pandemic::Player::take_card(City cityId) {
     return *this;
 }
 
-std::string pandemic::Player::role() {
+std::string pandemic::Player::role() const {
     return curr_role;
 }
 
