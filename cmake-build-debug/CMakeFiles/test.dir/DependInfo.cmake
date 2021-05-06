@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/amit/Desktop/pandemic/Board.cpp" "/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir/Board.cpp.o"
-  "/home/amit/Desktop/pandemic/Dispatcher.cpp" "/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir/Dispatcher.cpp.o"
-  "/home/amit/Desktop/pandemic/FieldDoctor.cpp" "/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir/FieldDoctor.cpp.o"
-  "/home/amit/Desktop/pandemic/GeneSplicer.cpp" "/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir/GeneSplicer.cpp.o"
-  "/home/amit/Desktop/pandemic/Medic.cpp" "/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir/Medic.cpp.o"
-  "/home/amit/Desktop/pandemic/OperationsExpert.cpp" "/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir/OperationsExpert.cpp.o"
-  "/home/amit/Desktop/pandemic/Player.cpp" "/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir/Player.cpp.o"
-  "/home/amit/Desktop/pandemic/Researcher.cpp" "/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir/Researcher.cpp.o"
-  "/home/amit/Desktop/pandemic/Scientist.cpp" "/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir/Scientist.cpp.o"
-  "/home/amit/Desktop/pandemic/Test.cpp" "/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir/Test.cpp.o"
-  "/home/amit/Desktop/pandemic/Virologist.cpp" "/home/amit/Desktop/pandemic/cmake-build-debug/CMakeFiles/test.dir/Virologist.cpp.o"
+  "/home/amit/Documents/pandemic/Board.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Board.cpp.o"
+  "/home/amit/Documents/pandemic/Dispatcher.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Dispatcher.cpp.o"
+  "/home/amit/Documents/pandemic/FieldDoctor.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/FieldDoctor.cpp.o"
+  "/home/amit/Documents/pandemic/GeneSplicer.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/GeneSplicer.cpp.o"
+  "/home/amit/Documents/pandemic/Medic.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Medic.cpp.o"
+  "/home/amit/Documents/pandemic/OperationsExpert.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/OperationsExpert.cpp.o"
+  "/home/amit/Documents/pandemic/Player.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Player.cpp.o"
+  "/home/amit/Documents/pandemic/Researcher.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Researcher.cpp.o"
+  "/home/amit/Documents/pandemic/Scientist.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Scientist.cpp.o"
+  "/home/amit/Documents/pandemic/Test.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Test.cpp.o"
+  "/home/amit/Documents/pandemic/Virologist.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Virologist.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -34,5 +34,6 @@ namespace pandemic{
         bool hasResearchStation(City cityId){return citiesData.at(cityId).hasResearchStation;}
         const std::vector<City>& getNei(City cityId){ return citiesData.at(cityId).connected;}
         pandemic::Color getCityColor(pandemic::City cityId){ return citiesData[cityId].cityColor;}
+        void buildResearchStation(pandemic::City cityId);
     };
 }

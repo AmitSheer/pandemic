@@ -100,6 +100,11 @@ namespace pandemic{
         os<<"Oh My God";
         return os;
     }
+
+    void Board::buildResearchStation(pandemic::City cityId) {
+        this->citiesData[cityId].hasResearchStation = true;
+    }
+
     std::ostream &operator<<(ostream &os, const CityData &city) {
             os<<city.infectionLevel;
             return os;

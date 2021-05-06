@@ -20,14 +20,16 @@ namespace pandemic{
         virtual Player& fly_charter (City cityId);
         virtual Player& fly_shuttle(City cityId);
         virtual Player& build();
-        virtual Player &discover_cure(pandemic::Color card_color);
+        virtual Player& discover_cure(pandemic::Color card_color);
         virtual Player& treat(City cityId);
         virtual Player& take_card(City cityId);
-        std::string role() const;
+        virtual std::string role() const;
     private:
         int curr_city;
         Board board;
         std::vector<pandemic::City> cards;
+        void check_cards(pandemic::City cityId);
+        void remove_card(pandemic::City cityId);
     protected:
         std::string curr_role;
     };

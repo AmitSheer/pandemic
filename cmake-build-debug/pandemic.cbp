@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/amit/Desktop/pandemic/cmake-build-debug"/>
+				<Option working_dir="/home/amit/Documents/pandemic/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/amit/Desktop/pandemic/cmake-build-debug"/>
+				<Option working_dir="/home/amit/Documents/pandemic/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/amit/Desktop/pandemic/cmake-build-debug"/>
+				<Option working_dir="/home/amit/Documents/pandemic/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
-				<Option output="/home/amit/Desktop/pandemic/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/amit/Desktop/pandemic/cmake-build-debug"/>
+				<Option output="/home/amit/Documents/pandemic/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/amit/Documents/pandemic/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test/fast">
-				<Option output="/home/amit/Desktop/pandemic/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/amit/Desktop/pandemic/cmake-build-debug"/>
+				<Option output="/home/amit/Documents/pandemic/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/amit/Documents/pandemic/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,80 +75,80 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 test/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Desktop/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/amit/Documents/pandemic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/amit/Desktop/pandemic/Board.cpp">
+		<Unit filename="/home/amit/Documents/pandemic/Board.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Board.hpp">
+		<Unit filename="/home/amit/Documents/pandemic/Board.hpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/City.hpp">
+		<Unit filename="/home/amit/Documents/pandemic/City.hpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Dispatcher.cpp">
+		<Unit filename="/home/amit/Documents/pandemic/Dispatcher.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Dispatcher.hpp">
+		<Unit filename="/home/amit/Documents/pandemic/Dispatcher.hpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/FieldDoctor.cpp">
+		<Unit filename="/home/amit/Documents/pandemic/FieldDoctor.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/FieldDoctor.hpp">
+		<Unit filename="/home/amit/Documents/pandemic/FieldDoctor.hpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/GeneSplicer.cpp">
+		<Unit filename="/home/amit/Documents/pandemic/GeneSplicer.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/GeneSplicer.hpp">
+		<Unit filename="/home/amit/Documents/pandemic/GeneSplicer.hpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Medic.cpp">
+		<Unit filename="/home/amit/Documents/pandemic/Medic.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Medic.hpp">
+		<Unit filename="/home/amit/Documents/pandemic/Medic.hpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/OperationsExpert.cpp">
+		<Unit filename="/home/amit/Documents/pandemic/OperationsExpert.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/OperationsExpert.hpp">
+		<Unit filename="/home/amit/Documents/pandemic/OperationsExpert.hpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Player.cpp">
+		<Unit filename="/home/amit/Documents/pandemic/Player.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Player.hpp">
+		<Unit filename="/home/amit/Documents/pandemic/Player.hpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Researcher.cpp">
+		<Unit filename="/home/amit/Documents/pandemic/Researcher.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Researcher.hpp">
+		<Unit filename="/home/amit/Documents/pandemic/Researcher.hpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Scientist.cpp">
+		<Unit filename="/home/amit/Documents/pandemic/Scientist.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Scientist.hpp">
+		<Unit filename="/home/amit/Documents/pandemic/Scientist.hpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Test.cpp">
+		<Unit filename="/home/amit/Documents/pandemic/Test.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Virologist.cpp">
+		<Unit filename="/home/amit/Documents/pandemic/Virologist.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/Virologist.hpp">
+		<Unit filename="/home/amit/Documents/pandemic/Virologist.hpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/home/amit/Desktop/pandemic/CMakeLists.txt">
+		<Unit filename="/home/amit/Documents/pandemic/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
