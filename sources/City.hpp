@@ -5,8 +5,10 @@
 #pragma once
 
 #include <algorithm>
+#include <ios>
 
 namespace pandemic{
+    //TODO: enum class
     enum City{
         Atlanta,
         Chicago,
@@ -60,18 +62,29 @@ namespace pandemic{
     };
     class CityData{
     public:
-        CityData() :  cityColor(Color::Black), infectionLevel(0), hasResearchStation(false){
+        CityData() :  cityColor(Color::Black), infectionLevel(0), hasResearchStation(false),cardStatus(false){
         }
-        CityData(int infectionLevel, pandemic::Color cityColor,
-                                     std::vector<pandemic::City> connections):  infectionLevel(infectionLevel), cityColor(cityColor), hasResearchStation(false){
-            connected = std::move(connections);
+        CityData(string cityName, int infectionLevel, pandemic::Color cityColor,
+                                     const std::set<pandemic::City>& connections):cityName(cityName),  infectionLevel(infectionLevel), cityColor(cityColor), hasResearchStation(false),cardStatus(false){
+            connected = connections;
         }
         bool is_con(pandemic::City con_id) {
             return std::count(this->connected.begin(), this->connected.end(), con_id)>0;
         }
+        string cityName;
         int infectionLevel;
         pandemic::Color cityColor;
-        std::vector<pandemic::City> connected;
+        std::set<pandemic::City> connected;
         bool hasResearchStation;
+        bool cardStatus;
+        friend std::ostream &operator<<(ostream &os, const CityData &cityData) {
+            std::string res ="{Research Station Status: ";
+            std::string inf =", Infection Level Status: ";
+
+            os << res;
+            os << string("exist") ;
+            os << inf << to_string(cityData.infectionLevel) << string("}");
+            return os;
+        }
     };
 }

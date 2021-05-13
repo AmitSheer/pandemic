@@ -5,6 +5,8 @@
 #pragma once
 #include <unordered_map>
 #include <vector>
+#include <set>
+
 using namespace std;
 #include "Color.hpp"
 #include "City.hpp"
@@ -26,14 +28,19 @@ namespace pandemic{
             cure_found[Color::Black] = false;
             cure_found[Color::Yellow] = false;
         }
+
         int& operator[] (pandemic::City city);
         int operator[] (pandemic::City city) const;
+        bool& operator[] (pandemic::Color color);
+        bool operator[] (pandemic::Color color) const;
         friend std::ostream& operator<<(std::ostream& os,const Board& board);
         bool is_clean();
-        void remove_cures(){};
+        void remove_cures();
+        void remove_stations();
         bool hasResearchStation(City cityId){return citiesData.at(cityId).hasResearchStation;}
-        const std::vector<City>& getNei(City cityId){ return citiesData.at(cityId).connected;}
+        const std::set<City>& getNei(City cityId){ return citiesData.at(cityId).connected;}
         pandemic::Color getCityColor(pandemic::City cityId){ return citiesData[cityId].cityColor;}
         void buildResearchStation(pandemic::City cityId);
+        std::string getCityName(pandemic::City cityId);
     };
 }

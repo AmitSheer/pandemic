@@ -8,6 +8,6 @@ namespace pandemic{
     class Researcher: public Player{
     public:
         Researcher(pandemic::Board& board, City cityId);
-        Researcher& discover_cure(Color colorId) override;
+        Researcher& discover_cure(Color card_color) override;
     };
 }

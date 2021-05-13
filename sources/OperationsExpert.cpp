@@ -3,13 +3,11 @@
 //
 #include "OperationsExpert.hpp"
 
-#include <utility>
-
-pandemic::OperationsExpert &pandemic::OperationsExpert::build() {
+pandemic::Player &pandemic::OperationsExpert::build() {
+    this->board.buildResearchStation(static_cast<City>(this->curr_city));
     return *this;
-
 }
 
 pandemic::OperationsExpert::OperationsExpert(pandemic::Board& board, int cityId): Player(board,cityId) {
-    this->curr_role = typeid(this).name();
+    this->curr_role = "OperationsExpert";
 }

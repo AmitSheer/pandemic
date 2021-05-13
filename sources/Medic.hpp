@@ -9,6 +9,11 @@ namespace pandemic{
     public:
         Medic(pandemic::Board& board, int cityId);
         Medic& treat(City cityId) override;
+        Medic& fly_direct(City cityId) override;
+        Medic& fly_shuttle(City cityId) override;
+        Medic& fly_charter(City cityId) override;
+        Medic& drive(City cityId) override;
+
     };
 }
 

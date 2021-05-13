@@ -5,5 +5,5 @@
 #pragma once
 
 namespace pandemic{
-    enum Color {Red=0,Yellow=1,Black=2,Blue=3};
+    enum Color {Red,Yellow,Black,Blue};
 }

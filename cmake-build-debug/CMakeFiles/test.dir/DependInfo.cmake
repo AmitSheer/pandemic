@@ -4,19 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/amit/Documents/pandemic/Board.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Board.cpp.o"
-  "/home/amit/Documents/pandemic/Dispatcher.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Dispatcher.cpp.o"
-  "/home/amit/Documents/pandemic/FieldDoctor.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/FieldDoctor.cpp.o"
-  "/home/amit/Documents/pandemic/GeneSplicer.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/GeneSplicer.cpp.o"
-  "/home/amit/Documents/pandemic/Medic.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Medic.cpp.o"
-  "/home/amit/Documents/pandemic/OperationsExpert.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/OperationsExpert.cpp.o"
-  "/home/amit/Documents/pandemic/Player.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Player.cpp.o"
-  "/home/amit/Documents/pandemic/Researcher.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Researcher.cpp.o"
-  "/home/amit/Documents/pandemic/Scientist.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Scientist.cpp.o"
-  "/home/amit/Documents/pandemic/Test.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Test.cpp.o"
-  "/home/amit/Documents/pandemic/Virologist.cpp" "/home/amit/Documents/pandemic/cmake-build-debug/CMakeFiles/test.dir/Virologist.cpp.o"
+  "/home/amit/Downloads/pandemic/StudentTest2.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/test.dir/StudentTest2.cpp.o"
+  "/home/amit/Downloads/pandemic/sources/Board.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/test.dir/sources/Board.cpp.o"
+  "/home/amit/Downloads/pandemic/sources/Dispatcher.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/test.dir/sources/Dispatcher.cpp.o"
+  "/home/amit/Downloads/pandemic/sources/FieldDoctor.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/test.dir/sources/FieldDoctor.cpp.o"
+  "/home/amit/Downloads/pandemic/sources/GeneSplicer.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/test.dir/sources/GeneSplicer.cpp.o"
+  "/home/amit/Downloads/pandemic/sources/Medic.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/test.dir/sources/Medic.cpp.o"
+  "/home/amit/Downloads/pandemic/sources/OperationsExpert.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/test.dir/sources/OperationsExpert.cpp.o"
+  "/home/amit/Downloads/pandemic/sources/Player.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/test.dir/sources/Player.cpp.o"
+  "/home/amit/Downloads/pandemic/sources/Researcher.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/test.dir/sources/Researcher.cpp.o"
+  "/home/amit/Downloads/pandemic/sources/Scientist.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/test.dir/sources/Scientist.cpp.o"
+  "/home/amit/Downloads/pandemic/sources/Virologist.cpp" "/home/amit/Downloads/pandemic/cmake-build-debug/CMakeFiles/test.dir/sources/Virologist.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

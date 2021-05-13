@@ -9,8 +9,8 @@ namespace pandemic{
     private:
         int n;
     public:
-        Scientist(pandemic::Board& board, int cityId,int n);
+        Scientist(pandemic::Board& board, int cityId,int n=5);
         Scientist(pandemic::Board& board, int cityId);
-        Scientist& discover_cure(Color colorId) override;
+        Scientist& discover_cure(Color card_color) override;
     };
 }

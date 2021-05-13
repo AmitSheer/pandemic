@@ -7,6 +7,6 @@ namespace pandemic{
     class OperationsExpert: public Player{
     public:
         OperationsExpert(pandemic::Board& board, int cityId);
-        OperationsExpert& build() override;
+        Player& build() override;
     };
 }
